@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+body{
+    background-color: hsl(186, 15%, 59%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    height: 90vh;
+}
+.contact-form-container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    line-height: 1;
+     
+}
+
+#first-name:hover{
+    border-color:hsl(169, 78%, 28%)
+}
+#last-name:hover{
+    border-color:hsl(169, 82%, 27%)
+}
+#email:hover{
+    border-color:hsl(169, 82%, 27%);
+}
+.radio-item:active{
+    border-color: hsl(169, 82%, 27%);
+    background-color: hsl(169, 82%, 27%);
+}
+
+.name-fields{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+   
+}
+.name-fields > div{
+    flex: 1;
+}
+.name-fields label,
+.name-fields input{
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+section{
+    width: 100%;
+    line-height: 2;
+    font-size: 16px;
+}
+#email{
+    width: 100%;
+    height: 2em;
+}
+
+.error-message{
+    color: hsl(0, 66%, 54%);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.radio-container{ 
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+    }
+
+.radio-item{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    width:42.6vh;
+}
+.radio-item label{
+    margin-right: 5px;
+}
+input[type = 'radio']{
+    margin-right: 10px;
+}
+
+
+
+textarea{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer,
+label{
+    margin-top:20px;
+    
+}
+
+button{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+#popup-text{
+	display: none;
+    background-color: hsl(169, 82%, 27%);
+    font-size: 11px;
+    height: 10vh;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    max-width: 500px;
+    line-height: 1.5;
+    z-index: 1000;
+}
+#popup-text.visible{
+    display: block;
+}
+
+@media (max-width:500px) {
+    .contact-form-container{
+        max-width: 200px;
+    }
+    .name-fields{
+        display: block;
+
+    }
+    .name-fields input{
+        width: 100%;
+    }
+    .radio-container{
+        display: block;
+    }
+    .radio-item{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #popup-text{
+        font-size: 12.3px;
+        left: 50%;
+        width: 350px;
+        z-index: 1000;
+    }
+    #first-name:hover{
+        border-color:hsl(169, 78%, 28%)
+    }
+    #last-name:hover{
+        border-color:hsl(169, 82%, 27%)
+    }
+    #email:hover{
+        border-color:hsl(169, 82%, 27%);
+    }
+    .radio-item:active{
+        border-color: hsl(169, 82%, 27%);
+        background-color: hsl(169, 82%, 27%);
+    }
+    
+}
+
+@media(max-width:900px) {
+    .contact-form-container{
+        /* height: 90vh; */
+        max-width: 400px;
+        margin-top: 60px;
+    }
+    .contact-form{
+        padding-top: 700px;
+        padding-bottom: 600px;
+    }
+    .radio-container{
+        display: block;
+    }
+    .radio-item{
+        margin-bottom: 15px;
+        width: 22.5rem;
+    }
+}
