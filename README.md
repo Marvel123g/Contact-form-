@@ -1,0 +1,1 @@
+This project is a simple web-based contact form that includes a popup notification to confirm successful form submission. The notification appears at the top of the form, with the text aligned to the left to enhance user experience
