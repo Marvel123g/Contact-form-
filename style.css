@@ -140,6 +140,7 @@ button{
 @media (max-width:500px) {
     .contact-form-container{
         max-width: 200px;
+	padding:20px;
     }
     .name-fields{
         display: block;
@@ -183,6 +184,7 @@ button{
         /* height: 90vh; */
         max-width: 400px;
         margin-top: 60px;
+	padding:20px;
     }
     .contact-form{
         padding-top: 700px;
